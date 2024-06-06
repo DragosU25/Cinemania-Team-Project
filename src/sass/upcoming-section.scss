@@ -1,7 +1,122 @@
+//Styles and color below
+
 .upcoming-title {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 28px;
   text-transform: uppercase;
   color: var(--white);
+  margin: 80px 0 28px 0;
+}
+
+.upcoming-img {
+  border-radius: 5px;
+  width: 805px;
+  height: 458px;
+  margin-right: 16px;
+}
+
+.upcoming-movie-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--white);
+}
+
+.upcoming-description-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.upcoming-rel-date {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.upcoming-votes {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--background);
+  border-radius: 5px;
+  padding: 1px 8px;
+  width: 36px;
+  height: 18px;
+  background: var(--white);
+}
+
+.upcoming-popularity {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.upcoming-genre {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+  width: 150px;
+}
+
+.upcoming-about {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 16px;
+}
+
+.upcoming-about-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+}
+
+.upcoming-button {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: var(--background);
+  border-radius: 74px;
+  padding: 12px 24px;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(170deg, #ffc226 0%, #f84119 100%);
+}
+
+// Everything else below like display flex and
+// center in page
+
+.upcoming-div-container {
+  display: flex;
+}
+
+.upcoming-votes-idk {
+  display: flex;
+  gap: 19px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondary-text);
+}
+
+td:nth-child(-n + 2) {
+  padding-top: 20px;
+  padding: 20px;
 }
