@@ -93,6 +93,8 @@
   line-height: 114%;
   text-align: center;
   color: var(--background);
+  cursor: pointer;
+  border: none;
   border-radius: 74px;
   padding: 12px 24px;
   width: 160px;
@@ -116,7 +118,14 @@
   color: var(--secondary-text);
 }
 
-td:nth-child(-n + 2) {
-  padding-top: 20px;
-  padding: 20px;
+.tablepad1 {
+  padding: 28px 58px 12px 0;
+}
+
+.tablepad2 {
+  padding: 12px 0 12px 0;
+}
+
+.tablepad3 {
+  padding: 0 0 20px 0;
 }
