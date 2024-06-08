@@ -1,2 +1,40 @@
-<section></section>
+<section>
+  <h1 class="upcoming-title">upcoming this month</h1>
+  <div class="upcoming-div-container">
+    <img
+      class="upcoming-img"
+      id="moviePoster"
+      src="https://api.themoviedb.org/3/genre/movie/list?language=en"
+      alt="Poster Film"
+    />
+    <div>
+      <h1 class="upcoming-movie-title" id="movie-title"></h1>
+      <table>
+        <tr>
+          <td class="upcoming-description-text">Release date</td>
+          <td class="upcoming-rel-date" id="release_date"></td>
+        </tr>
+        <tr>
+          <td class="upcoming-description-text">Vote / Votes</td>
+          <td class="upcoming-votes-idk">
+            <p class="upcoming-votes" id="voteRating"></p>
+            /
+            <p class="upcoming-votes" id="voteCount"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="upcoming-description-text">Popularity</td>
+          <td class="upcoming-popularity" id="movie-rating"></td>
+        </tr>
+        <tr>
+          <td class="upcoming-description-text">Genre</td>
+          <td class="upcoming-genre" id="genres"></td>
+        </tr>
+      </table>
+      <h2 class="upcoming-about">ABOUT</h2>
+      <p class="upcoming-about-description" id="movie-overview"></p>
+      <button class="upcoming-button">Add to my library</button>
+    </div>
+  </div>
+</section>
 <script type="script" src="./js/upcoming-section.js"></script>

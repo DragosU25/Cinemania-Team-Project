@@ -1,55 +1,52 @@
-const API_KEY = 'd76d8df6a2b0d7e69c80b59c6dadfabe';
 const options = { method: 'GET', headers: { accept: 'application/json' } };
+const apiKey = 'd76d8df6a2b0d7e69c80b59c6dadfabe';
+const apiUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US-EN&page=1`;
+const apiUrlGenre = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US-EN&page=1`;
 
-fetch('https://api.themoviedb.org/3/trending/all/week?language=en-US', options)
+fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
   .then(response => response.json())
   .then(response => console.log(response))
   .catch(err => console.error(err));
 
-if (e.target.id === 'more-details') {
-  let html = `
-  <h1 class="upcoming-title">upcoming this month</h1>
-  <div class="upcoming-div-container">
-    <img
-      class="upcoming-img"
-      src="./images/Upcoming.section.jpg"
-      alt="upcoming this month"
-    />
-    <div>
-      <h1 class="upcoming-movie-title">THE LOST CITY</h1>
-      <table>
-        <tr>
-          <td class="upcoming-description-text">Release date</td>
-          <td class="upcoming-rel-date">03.03.2023</td>
-        </tr>
-        <tr>
-          <td class="upcoming-description-text">Vote / Votes</td>
-          <td class="upcoming-votes-idk">
-            <p class="upcoming-votes">7.3</p>
-            /
-            <p class="upcoming-votes">1260</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="upcoming-description-text">Popularity</td>
-          <td class="upcoming-popularity">99.9</td>
-        </tr>
-        <tr>
-          <td class="upcoming-description-text">Genre</td>
-          <td class="upcoming-genre">Comedy, action</td>
-        </tr>
-      </table>
-      <h2 class="upcoming-about">ABOUT</h2>
-      <p class="upcoming-about-description">
-        Reclusive author Loretta Sage writes about exotic places in her popular
-        adventure novels that feature a handsome cover model named Alan. While
-        on tour promoting her new book with Alan, Loretta gets kidnapped by an
-        eccentric billionaire who hopes she can lead him to an ancient city's
-        lost treasure from her latest story. Determined to prove he can be a
-        hero in real life and not just on the pages of her books, Alan sets off
-        to rescue her.
-      </p>
-      <button class="upcoming-button">Add to my library</button>
-    </div>
-  </div> `;
+async function getMovieOfTheWeek() {
+  try {
+    const response = await fetch(apiUrl);
+    const movieGenre = await fetch(apiUrlGenre);
+    const data = await response.json();
+    const movie = data.results[0];
+
+    document.getElementById('movie-title').innerText = movie.title;
+    document.getElementById('genre').innerText = movieGenre.id;
+    document.getElementById('voteRating').innerText = movie.vote_average;
+    document.getElementById('voteCount').innerText = movie.vote_count;
+    document.getElementById('release_date').innerText = movie.release_date;
+    document.getElementById('moviePoster').innerText = movie.poster_path;
+    document.getElementById('movie-overview').innerText = movie.overview;
+    document.getElementById('movie-rating').innerText = `${movie.vote_average}`;
+  } catch (error) {
+    console.error('Error fetching movie details:', error);
+  }
+  var g = '';
+  for (i in genres) {
+    g += genres[i].name;
+  }
+  document.getElementById('genres').textContent = genres[i].name;
 }
+
+getMovieOfTheWeek();
+
+// const getTrendingMovie = async () => {
+//   try {
+//     const response = await fetch(
+//       `${BASE_URL}trending/movie/week?api_key=${API_KEY}`
+//     );
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok: ' + response.statusText);
+//     }
+//     const data = await response.json();
+//     return data.results;
+//   } catch (error) {
+//     console.error('Fetch error', error);
+//     throw error;
+//   }
+// };
