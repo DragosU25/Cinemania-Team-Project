@@ -12,19 +12,21 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
 async function getMovieOfTheWeek() {
   try {
     const response = await fetch(apiUrl);
-    const movieGenre = await fetch(apiUrlGenre);
     const data = await response.json();
     const movie = data.results[0];
     const imagePath = 'https://image.tmdb.org/t/p/w1280/';
+    const imagePoster = movie.backdrop_path;
+    console.log(imagePoster);
 
     document.getElementById('movie-title').innerText = movie.title;
     // document.getElementById('genre').innerText = movieGenre.id;
     document.getElementById('voteRating').innerText = movie.vote_average;
     document.getElementById('voteCount').innerText = movie.vote_count;
     document.getElementById('release_date').innerText = movie.release_date;
-    document.getElementById('moviePoster').innerText = imagePath.poster_path;
     document.getElementById('movie-overview').innerText = movie.overview;
     document.getElementById('movie-rating').innerText = `${movie.vote_average}`;
+    var el = document.getElementById('moviePoster');
+    el.innerHTML = `<img class="upcoming-img" src='${imagePath}${imagePoster}'>`;
   } catch (error) {
     console.error('Error fetching movie details:', error);
   }
@@ -32,24 +34,18 @@ async function getMovieOfTheWeek() {
 
 getMovieOfTheWeek();
 
-// const getTrendingMovie = async () => {
-//   try {
-//     const response = await fetch(
-//       `${BASE_URL}trending/movie/week?api_key=${API_KEY}`
-//     );
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok: ' + response.statusText);
-//     }
-//     const data = await response.json();
-//     return data.results;
-//   } catch (error) {
-//     console.error('Fetch error', error);
-//     throw error;
-//   }
-// };
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const genres = data.genres;
+    const genreList = genres.map(genre => genre.name).join(', ');
+    console.log('Movie Genres:', genreList);
+    // Display genreList on your webpage
+    document.getElementById('genre').innerText = genreList;
+  })
+  .catch(error => console.error('Error fetching genres:', error));
 
-// e.preventDefault();
-// if (e.target.id === 'more-details') {
-//   let html = ;
-//   movieDetalisContainer.innerHTML = html;
-// }
+// const idMovieStorage = movie.id;
+// console.log(idMovieStorage);
+// var buttonStorageSave = document.getElementById('saveServer');
+// localStorage.setItem('server', buttonStorageSave.val(idMovieStorage));
