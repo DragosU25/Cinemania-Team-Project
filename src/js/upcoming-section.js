@@ -2,9 +2,12 @@ const options = { method: 'GET', headers: { accept: 'application/json' } };
 const apiKey = 'd76d8df6a2b0d7e69c80b59c6dadfabe';
 const apiUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US-EN&page=1`;
 const apiUrlGenre = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US-EN&page=1`;
-const BASE_URL = 'https://api.themoviedb.org/3/';
+
 const imagePath = 'https://image.tmdb.org/t/p/w1280/';
-fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
+fetch(
+  `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US-EN&page=1`,
+  options
+)
   .then(response => response.json())
   .then(response => console.log(response))
   .catch(err => console.error(err));
@@ -34,7 +37,7 @@ async function getMovieOfTheWeek() {
 
 getMovieOfTheWeek();
 
-fetch(apiUrl)
+fetch(apiUrlGenre)
   .then(response => response.json())
   .then(data => {
     const genres = data.genres;

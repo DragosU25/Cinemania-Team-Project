@@ -89,17 +89,17 @@
 .upcoming-button {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 114%;
+  font-size: 12px;
+  line-height: 133%;
   text-align: center;
-  color: var(--background);
+  color: var(--white);
   cursor: pointer;
   border: none;
   border-radius: 74px;
   padding: 12px 24px;
-  width: 160px;
+  width: 140px;
   height: 40px;
-  background: linear-gradient(170deg, #ffc226 0%, #f84119 100%);
+  background: linear-gradient(165deg, #ffc226 0%, #f84119 100%);
 }
 
 // Everything else below like display flex and
