@@ -1,25 +1,72 @@
-<section class="section catalog-search">
-    <div class="container">
-        <form action="submit" class="catalog__form" id="search-form">
-          <div class="input-container">
-            <input
-              class="catalog__form-input"
-              type="text"
-              name="search"
-              id="searchQuery"
-              placeholder="Search"
-              autocomplete="off"
-            />
-            
-              <svg class="clear__icon">
-                <use href="./images/sprite.svg#icon-clear-input" ></use>
-              </svg>
-          </div>
-          <button class="catalog__form-button" aria-label="search button">
-            <svg class="search__icon">
-              <use href="./images/sprite.svg#icon-searh_white" ></use>
-            </svg>                
-          </button>
-        </form>
-    </div>
-</section>
+<!--search-section-->
+<section class="catalog">
+  <div class="container catalog">
+    <form class="catalog__search-form" id="idFormCatalog" autocomplete="off">
+      <div class="catalog__dropdown-input">
+        <input type="text" name="name" class="catalog__search-input" id="nameFilm" placeholder="Film">
+        <button type="button" class="catalog__btn-cross ishidden">
+          <svg class="catalog__icon-cross" width="20" height="20">
+            <use href="./images/search-sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+        <div class="catalog__dropdown-year">
+          <input readonly class="catalog__search-year" name="year" placeholder="Year">
+          <ul class="catalog__dropdown-list ishidden">
+            <li class="catalog__dropdown-item">2023</li>
+            <li class="catalog__dropdown-item">2022</li>
+            <li class="catalog__dropdown-item">2021</li>
+            <li class="catalog__dropdown-item">2020</li>
+            <li class="catalog__dropdown-item">2019</li>
+            <li class="catalog__dropdown-item">2018</li>
+            <li class="catalog__dropdown-item">2017</li>
+            <li class="catalog__dropdown-item">2016</li>
+            <li class="catalog__dropdown-item">2015</li>
+          </ul>
+        </div>
+  
+        <button type="submit" class="catalog__submit">
+          <svg class="catalog__serch-icon" width="20" height="20">
+            <use href="./images/search-sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+  
+    </form>
+  <!--catalog-section-->
+    <ul class="catalog__gallery" ></ul>
+  
+     <p class="catalog__message js-catalog__message--trend ishidden">
+      OOPS...</br>
+      We are very sorry!</br>
+      We don’t have any movies.
+    </p>
+  
+  
+    <p class="catalog__message js-catalog__message--search ishidden">
+      OOPS...</br>
+      We are very sorry!</br>
+      We don’t have any results matching your search.
+    </p>
+     
+    <!--Pagination-section-->
+    <div class="container pagination">
+      <button class="arrow pagination__back" disabled=""></button>
+        <ul class="pagination-list">
+          <li class="pagination-list__item">
+            <a href="#" class="pagination-list__link selected">01</a>
+          </li>
+          <li class="pagination-list__item">
+            <a href="#" class="pagination-list__link">02</a>
+          </li>
+          <li class="pagination-list__item">
+            <a href="#" class="pagination-list__link">03</a>
+          </li>
+          <li class="pagination-list__item">
+            <a href="#" class="more pagination-list__link">...</a>
+                      </li>
+          <li class="pagination-list__item">
+            <a href="#" class="pagination-list__link">500</a>
+                </li>
+        </ul>
+        <button class="pagination__forward arrow"></button>
+      </div>
