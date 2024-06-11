@@ -270,12 +270,13 @@
     height: 16px;
     display: block;
 
-    background-image: url(../images/down.svg);
+    background-image: url(..images/sprite-icons.svg/icon-down);
     pointer-events: none;
     color:#111;
  }
  .light-theme .catalog__dropdown-year::after {
-    background-image: url(../images/down_dark.svg);
+    background-image: url(../images/sprite-icons.svg/icon-down-dark);
+    
   }
 
 
@@ -415,20 +416,20 @@
   
   .pagination__back {
     margin-right: 4px;
-    background-image: url(../images/Vector-back.svg);
+    background-image: url(../images/icon-Vector-back);
   }
   
   .light-theme .pagination__back {
-    background-image: url(../images/Vector-back-light.svg);
+    background-image: url(../images/icon-Vector-back-light);
   }
   
   .pagination__forward {
     margin-left: 4px;
-    background-image: url(../images/Vector-forward.svg);
+    background-image: url(../images/icon-Vector-forward);
   }
   
   .light-theme .pagination__forward {
-    background-image: url(../images/Vector-forward-light.svg);
+    background-image: url(../images/icon-Vector-forward-light);
   }
   
   .pagination-list__item:not(:last-child) {
@@ -492,20 +493,20 @@
   
     .pagination__back {
       margin-right: 12px;
-      background-image: url(../images/Vector-back-tablet.svg);
+      background-image: url(../images/icon-Vector-back-tablet);
     }
   
     .pagination__forward {
       margin-left: 12px;
-      background-image: url(../images/Vector-forward-tablet.svg);
+      background-image: url(../images/icon-Vector-forward-tablet);
     }
   
     .light-theme .pagination__back {
-      background-image: url(../images/Vector-back-light-tablet.svg);
+      background-image: url(../images/icon-Vector-back-light-tablet);
     }
   
     .light-theme .pagination__forward {
-      background-image: url(../images/Vector-forward-light-tablet.svg);
+      background-image: url(../images/icon-Vector-forward-light-tablet);
     }
   }
   
@@ -515,18 +516,18 @@
     }
   
     .pagination__back {
-      background-image: url(../images/Vector-back-desktop.svg);
+      background-image: url(../images/icon-Vector-back-desktop);
     }
   
     .pagination__forward {
-      background-image: url(../images/Vector-forward-desktop.svg);
+      background-image: url(../images/icon-Vector-forward-desktop);
     }
   
     .light-theme .pagination__back {
-      background-image: url(../images/Vector-back-desktop-light.svg);
+      background-image: url(../images/icon-Vector-back-desktop-light);
     }
   
     .light-theme .pagination__forward {
-      background-image: url(../images/Vector-forward-desktop-light.svg);
+      background-image: url(../images/icon-Vector-forward-desktop-light);
     }
   }
