@@ -8,7 +8,7 @@ const paginationListLinks = document.querySelectorAll('.pagination-list__link');
 const paginationBackArrow = document.querySelector('.pagination__back');
 const paginationForwardArrow = document.querySelector('.pagination__forward');
 
-// ======ВИКЛИК ФУНКЦІЇ РЕНДЕРУ КАРТОК=======
+
 
 export const movieListContainer = document.querySelector('.catalog__gallery');
 fetchMovieTrend(page)
