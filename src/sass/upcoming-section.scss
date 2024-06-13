@@ -1,4 +1,7 @@
 //Styles and color below
+.upcoming-container {
+  margin: 0 32px;
+}
 
 .upcoming-title {
   font-family: var(--font-family);
@@ -10,10 +13,12 @@
 }
 
 .upcoming-img {
+  max-width: 805px;
+  max-height: 458px;
   border-radius: 5px;
-  width: 805px;
-  height: 458px;
   margin-right: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .upcoming-movie-title {
@@ -84,6 +89,7 @@
   line-height: 143%;
   color: var(--secondary-text);
   margin-bottom: 20px;
+  max-width: 390px;
 }
 
 .upcoming-button {
@@ -107,6 +113,7 @@
 
 .upcoming-div-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .upcoming-votes-idk {
@@ -128,4 +135,40 @@
 
 .tablepad3 {
   padding: 0 0 20px 0;
+}
+
+// Phone
+@media only screen and (max-width: 320px) {
+}
+
+// Tablet
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .upcoming-container {
+    max-width: 768px;
+    margin: 0 32px;
+  }
+
+  .upcoming-about {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--secondary-text);
+  }
+
+  .upcoming-button {
+    border-radius: 74px;
+    padding: 12px 24px;
+    width: 155px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .upcoming-about-description {
+    max-width: 625px;
+  }
+}
+
+// Desktop
+@media only screen and (max-width: 769px) {
 }
