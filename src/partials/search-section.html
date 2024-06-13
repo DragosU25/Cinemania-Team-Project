@@ -3,51 +3,501 @@
   <div class="container catalog">
     <form class="catalog__search-form" id="idFormCatalog" autocomplete="off">
       <div class="catalog__dropdown-input">
-        <input type="text" name="name" class="catalog__search-input" id="nameFilm" placeholder="Film">
+        <input
+          type="text"
+          name="name"
+          class="catalog__search-input"
+          id="nameFilm"
+          placeholder="Film"
+        />
         <button type="button" class="catalog__btn-cross ishidden">
           <svg class="catalog__icon-cross" width="20" height="20">
             <use href="./images/search-sprite.svg#icon-x"></use>
           </svg>
         </button>
       </div>
-        <div class="catalog__dropdown-year">
-          <input readonly class="catalog__search-year" name="year" placeholder="Year">
-          <ul class="catalog__dropdown-list ishidden">
-            <li class="catalog__dropdown-item">2023</li>
-            <li class="catalog__dropdown-item">2022</li>
-            <li class="catalog__dropdown-item">2021</li>
-            <li class="catalog__dropdown-item">2020</li>
-            <li class="catalog__dropdown-item">2019</li>
-            <li class="catalog__dropdown-item">2018</li>
-            <li class="catalog__dropdown-item">2017</li>
-            <li class="catalog__dropdown-item">2016</li>
-            <li class="catalog__dropdown-item">2015</li>
-          </ul>
-        </div>
-  
-        <button type="submit" class="catalog__submit">
-          <svg class="catalog__serch-icon" width="20" height="20">
-            <use href="./images/search-sprite.svg#icon-search"></use>
-          </svg>
-        </button>
-  
+
+      <div class="catalog__dropdown-year">
+        <input
+          readonly
+          class="catalog__search-year"
+          name="year"
+          placeholder="Year"
+        />
+        <ul class="catalog__dropdown-list ishidden">
+          <li class="catalog__dropdown-item">2023</li>
+          <li class="catalog__dropdown-item">2022</li>
+          <li class="catalog__dropdown-item">2021</li>
+          <li class="catalog__dropdown-item">2020</li>
+          <li class="catalog__dropdown-item">2019</li>
+          <li class="catalog__dropdown-item">2018</li>
+          <li class="catalog__dropdown-item">2017</li>
+          <li class="catalog__dropdown-item">2016</li>
+          <li class="catalog__dropdown-item">2015</li>
+        </ul>
+        
+      </div>
+
+      <button type="submit" class="catalog__submit">
+        <svg class="catalog__serch-icon" width="20" height="20">
+          <use href="./images/search-sprite.svg#icon-search"></use>
+        </svg>
+      </button>
     </form>
-  <!--catalog-section-->
+    <!--catalog-section-->
     <ul class="catalog__gallery" ></ul>
+    <li class="movie-card js-open-modal" data-id="974635" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/5BfcYFhRVlgWLFo4SCkQNsIWzyy.jpg" alt="Hit Man" data-id="974635" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Hit Man</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Romance | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 69.23%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li> 
+    <li class="movie-card js-open-modal" data-id="786892" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg" alt="Furiosa: A Mad Max Saga" data-id="786892" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Furiosa: A Mad Max Saga</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Action | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 76.34%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="940721" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/hkxxMIGaiCTmrEArK7J56JTKUlB.jpg" alt="Godzilla Minus One" data-id="940721" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Godzilla Minus One</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Science Fiction | 2023</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 76.21%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="929590" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War" data-id="929590" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Civil War</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">War | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 70.03%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="823464" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg" alt="Godzilla x Kong: The New Empire" data-id="823464" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Godzilla x Kong: The New Empire</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Science Fiction | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 72.13%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="573435" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg" alt="Bad Boys: Ride or Die" data-id="573435" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Bad Boys: Ride or Die</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Action | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 72%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="1001311" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/qZPLK5ktRKa3CL4sKRZtj8UlPYc.jpg" alt="Under Paris" data-id="1001311" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Under Paris</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Thriller | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 57.39%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="746036" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/aBkqu7EddWK7qmY4grL4I6edx2h.jpg" alt="The Fall Guy" data-id="746036" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">The Fall Guy</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Action | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 72.79%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="693134" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Dune: Part Two" data-id="693134" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Dune: Part Two</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Science Fiction | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 81.67%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="614933" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg" alt="Atlas" data-id="614933" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Atlas</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Science Fiction | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 67.37%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="1022789" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" alt="Inside Out 2" data-id="1022789" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Inside Out 2</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Animation | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 72.78%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="437342" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/uGyiewQnDHPuiHN9V4k2t9QBPnh.jpg" alt="The First Omen" data-id="437342" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">The First Omen</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Horror | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 67.75%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="719221" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg" alt="Tarot" data-id="719221" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Tarot</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Horror | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 64.45%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="937287" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/H6vke7zGiuLsz4v4RPeReb9rsv.jpg" alt="Challengers" data-id="937287" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Challengers</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Romance | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 72.41%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="653346" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/gKkl37BQuKTanygYQG1pyYgLVgf.jpg" alt="Kingdom of the Planet of the Apes" data-id="653346" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Kingdom of the Planet of the Apes</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Science Fiction | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 68.59%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="1010600" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/qyT2xw9FBxHlNXQYsuNCu8T7Rbo.jpg" alt="The Strangers: Chapter 1" data-id="1010600" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">The Strangers: Chapter 1</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Horror | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 55.65%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="533535" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/jbwYaoYWZwxtPP76AZnfYKQjCEB.jpg" alt="Deadpool &amp; Wolverine" data-id="533535" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Deadpool &amp; Wolverine</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Science Fiction | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 0%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="1111873" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/5gKKSoD3iezjoL7YqZONjmyAiRA.jpg" alt="Abigail" data-id="1111873" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Abigail</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Horror | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 68.12%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="1086747" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/vZVEUPychdvZLrTNwWErr9xZFmu.jpg" alt="The Watchers" data-id="1086747" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">The Watchers</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Horror | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 59%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <li class="movie-card js-open-modal" data-id="882059" data-modal="1">
+      <img class="movie-card__img" src="https://image.tmdb.org/t/p/w500/25JskXmchcYwj3jHRmcPm738MpB.jpg" alt="Boy Kills World" data-id="882059" loading="lazy">
+      <div class="movie-card__info">
+      <p class="movie-card__title">Boy Kills World</p>
+       <div class="movie-card__ganre-rating-wrap">
+      <p class="movie-card__genre-year">Action | 2024</p> 
+      <div class="rating">
+      <div class="rating__body">
+      <div class="rating__active" style="width: 69.07%;"></div>
+      <div class="rating__items">
+      <input class="rating__item" type="radio" value="1" name="rating">
+      <input class="rating__item" type="radio" value="2" name="rating">
+      <input class="rating__item" type="radio" value="3" name="rating">
+      <input class="rating__item" type="radio" value="4" name="rating">
+      <input class="rating__item" type="radio" value="5" name="rating">
+    </div>
+
+</div>
+      </div>
+      </div>
+      </div>
+    </li>
+    <p class="catalog__message ishidden js-catalog__message--trend">
+       OOPS...<br>
+       We are very sorry!<br> 
+       We don’t have any movies. </p>
+    
   
-     <p class="catalog__message js-catalog__message--trend ishidden">
-      OOPS...</br>
-      We are very sorry!</br>
-      We don’t have any movies.
-    </p>
-  
-  
-    <p class="catalog__message js-catalog__message--search ishidden">
-      OOPS...</br>
-      We are very sorry!</br>
-      We don’t have any results matching your search.
-    </p>
+       <p class="catalog__message ishidden js-catalog__message--search"> 
+        OOPS...<br> 
+        We are very sorry!<br>
+        We don’t have any results matching your search. </p>
      
+
     <!--Pagination-section-->
     <div class="container pagination">
       <button class="arrow pagination__back" disabled=""></button>
@@ -69,5 +519,6 @@
                 </li>
         </ul>
         <button class="pagination__forward arrow"></button>
-      </div>
-      <script src="js" type="module"></script>
+  </div>
+</section>
+<script src="./js/search.js" type="module"></script>
