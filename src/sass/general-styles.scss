@@ -6,6 +6,19 @@ html {
   margin: 0;
 }
 
+:root {
+  --orange: #f87719;
+  --grey: #b7b7b7;
+  --white: #fff;
+  --background: #111;
+  --secondary-text: #f8f8f8;
+  --secondary-black: #282828;
+  --grey-white-theme: #595959;
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Montserrat', sans-serif;
+  --third-family: 'Gilroy', sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -19,7 +32,7 @@ html {
 body {
   font-family: 'DM Sans', sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: #111;
 }
 
 .list {
@@ -29,4 +42,10 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
 }
