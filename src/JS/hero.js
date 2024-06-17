@@ -1,7 +1,8 @@
-import {getUser} from "./API"
 import {onOpenModal} from "../../common/modal/film-overview/overview"
 
 import {getTrailer, watchTrailer, openNoTrailerModal} from "../../common/modal/trailer-mod/trailer"
+
+
 
 const hero = document.querySelector(".hero")
 const button = document.querySelector('.button-js');
@@ -40,7 +41,11 @@ getUser().then(res =>{
 function renderHero({results}){
     const randomNumber = Math.floor(Math.random() * (results.length- 1)) ;
     const movieTheDay = results[randomNumber];
-    
+    // overview
+    // original_name
+    // backdrop_path
+    // id
+
     hero.innerHTML="";
     hero.style.backgroundImage = `linear-gradient(86.77deg, #111111 30.38%, rgba(17, 17, 17, 0) 65.61%), url(https://image.tmdb.org/t/p/original${movieTheDay.backdrop_path})`;
     const markUp = `
@@ -95,5 +100,3 @@ function updateCinemaText() {
       cinemaText.textContent = "Is a guide to creating a personalized movie theater experience. You'll need a projector, screen, and speakers.";
     }
 }
-
-

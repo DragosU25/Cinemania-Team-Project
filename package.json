@@ -19,11 +19,17 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.7.2",
+    "buffer": "^6.0.3",
+    "firebase": "^10.12.2",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.7"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
+    "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
